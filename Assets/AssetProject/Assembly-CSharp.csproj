@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LoadingScreen\RoundnessAdjuster.cs" />
+    <Compile Include="Assets\LoadingScreen\LoadingBar.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -81,14 +81,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/Installs/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -623,6 +623,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{4511C5B9-A787-6888-11AF-4769A616E2DF}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Nobi.UiRoundedCorners.csproj">
       <Project>{8B47BCE7-B707-DB22-F08C-DBDD08197AC0}</Project>
       <Name>Nobi.UiRoundedCorners</Name>

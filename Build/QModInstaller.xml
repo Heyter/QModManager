@@ -421,6 +421,34 @@
               <c>true</c> if debug logs are enabled; otherwise, <c>false</c>.
             </value>
         </member>
+        <member name="T:QModManager.Utility.ExtensionMethods">
+            <summary>
+            Various extension methods
+            </summary>
+        </member>
+        <member name="M:QModManager.Utility.ExtensionMethods.ToStringParsed(System.Version)">
+            <summary>
+            Like <see cref="M:System.Version.ToString"/>, but it removes any trailing zeroes
+            </summary>
+            <param name="version">The <see cref="T:System.Version"/> to parse</param>
+            <returns>The parsed <see cref="T:System.Version"/> as a <see cref="T:System.String"/>, with no trailing zeroes</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="version"/> is null</exception>
+        </member>
+        <member name="M:QModManager.Utility.ExtensionMethods.GetOrAddComponent``1(UnityEngine.GameObject)">
+            <summary> </summary>
+        </member>
+        <member name="M:QModManager.Utility.ExtensionMethods.GetOrAddComponent``1(UnityEngine.MonoBehaviour)">
+            <summary> </summary>
+        </member>
+        <member name="M:QModManager.Utility.ExtensionMethods.SetEdge(UnityEngine.RectTransform,UnityEngine.RectTransform.Edge,System.Single)">
+            <summary>
+            Modifies the edge of a <see cref="T:UnityEngine.RectTransform"/>
+            </summary>
+            <param name="rt"></param>
+            <param name="edge">The edge to modify</param>
+            <param name="amount">The amount to set the edge to</param>
+            <exception cref="T:System.ArgumentException">If <paramref name="edge"/> is not <see cref="F:UnityEngine.RectTransform.Edge.Left"/>, <see cref="F:UnityEngine.RectTransform.Edge.Right"/>, <see cref="F:UnityEngine.RectTransform.Edge.Top"/>, or <see cref="F:UnityEngine.RectTransform.Edge.Bottom"/></exception>
+        </member>
         <member name="T:QModInstaller.QModPatcher">
             <summary>
             Container class for the entry point

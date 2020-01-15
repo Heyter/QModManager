@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: d3beb88e61f88ca4393acdefb005fa70
-ShaderImporter:
+guid: c760709ce0c5cec429caeb40ad64fd97
+NativeFormatImporter:
   externalObjects: {}
-  defaultTextures: []
-  nonModifiableTextures: []
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: loadingscreen
   assetBundleVariant: 

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3703077142
+CRC: 2278014709
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 463087091da26684a1acf4cd971c7dd8
+    Hash: 09b2280f157b9f01c16baf75517eb86b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 834ce47d19acb785dc64ad962747f0d1
@@ -41,10 +41,10 @@ Assets:
 - Assets/LoadingScreen/LoadingBar.prefab
 - Assets/LoadingScreen/Background Rounded.mat
 - Assets/LoadingScreen/LoadingArcticPeeper.png
-- Assets/LoadingScreen/Unity-UI-Rounded-Corners/package.json
-- Assets/LoadingScreen/Unity-UI-Rounded-Corners/UiRoundedCorners/SDFUtils.cginc
+- Assets/Plugins/Unity-UI-Rounded-Corners/package.json
+- Assets/Plugins/Unity-UI-Rounded-Corners/UiRoundedCorners/SDFUtils.cginc
 - Assets/LoadingScreen/LoadingPeeper.png
-- Assets/LoadingScreen/Unity-UI-Rounded-Corners/UiRoundedCorners/RoundedCorners.shader
-- Assets/LoadingScreen/Unity-UI-Rounded-Corners/UiRoundedCorners/ShaderSetup.cginc
-- Assets/LoadingScreen/Unity-UI-Rounded-Corners/UiRoundedCorners/IndependentRoundedCorners.shader
+- Assets/LoadingScreen/Bar Rounded.mat
+- Assets/Plugins/Unity-UI-Rounded-Corners/UiRoundedCorners/RoundedCorners.shader
+- Assets/Plugins/Unity-UI-Rounded-Corners/UiRoundedCorners/ShaderSetup.cginc
 Dependencies: []

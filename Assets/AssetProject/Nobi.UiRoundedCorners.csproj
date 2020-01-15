@@ -62,11 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LoadingScreen\Unity-UI-Rounded-Corners\UiRoundedCorners\ImageWithRoundedCorners.cs" />
-    <None Include="Assets\LoadingScreen\Unity-UI-Rounded-Corners\UiRoundedCorners\SDFUtils.cginc" />
-    <None Include="Assets\LoadingScreen\Unity-UI-Rounded-Corners\UiRoundedCorners\RoundedCorners.shader" />
-    <None Include="Assets\LoadingScreen\Unity-UI-Rounded-Corners\UiRoundedCorners\ShaderSetup.cginc" />
-    <None Include="Assets\LoadingScreen\Unity-UI-Rounded-Corners\UiRoundedCorners\IndependentRoundedCorners.shader" />
+    <Compile Include="Assets\Plugins\Unity-UI-Rounded-Corners\UiRoundedCorners\ImageWithRoundedCorners.cs" />
+    <None Include="Assets\Plugins\Unity-UI-Rounded-Corners\UiRoundedCorners\SDFUtils.cginc" />
+    <None Include="Assets\Plugins\Unity-UI-Rounded-Corners\UiRoundedCorners\RoundedCorners.shader" />
+    <None Include="Assets\Plugins\Unity-UI-Rounded-Corners\UiRoundedCorners\ShaderSetup.cginc" />
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/user/Desktop/QModManager/Assets/AssetProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
