@@ -126,6 +126,7 @@
     <Compile Include="API\IQMod.cs" />
     <Compile Include="API\IQModAPI.cs" />
     <Compile Include="API\IQModServices.cs" />
+    <Compile Include="HarmonyPatches\DisableFeedbackButton.cs" />
     <Compile Include="Patching\ModStatus.cs" />
     <Compile Include="API\ModLoading\QModCoreAttribute.cs" />
     <Compile Include="API\ModLoading\QModPatch.cs" />
@@ -161,6 +162,7 @@
     <Compile Include="Patching\QModPlaceholder.cs" />
     <Compile Include="Patching\QModPatchMethod.cs" />
     <Compile Include="Utility\Config.cs" />
+    <Compile Include="Utility\LogUploader.cs" />
     <Compile Include="Utility\SummaryLogger.cs" />
     <Compile Include="Utility\IOUtilities.cs" />
     <Compile Include="Utility\Logger.cs" />

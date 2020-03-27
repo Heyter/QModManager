@@ -10,9 +10,9 @@
         [HarmonyPostfix]
         internal static void Postfix(IngameMenu __instance)
         {
-            __instance.feedbackButton.interactable = false;
+            __instance.feedbackButton.gameObject.SetActive(false);
             Transform transform = __instance.transform.Find("Main/ButtonLayout/ButtonFeedback");
-            if (transform != null) transform.GetComponent<Button>().interactable = false;
+            if (transform != null) transform.gameObject.SetActive(false);
         }
     }
 

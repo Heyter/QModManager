@@ -63,6 +63,10 @@
                             break;
                     }
                 }
+                catch
+                {
+
+                }
             });
             internal static readonly Button Close = new Button("Close", () => { });
             internal static readonly Button Download = new Button("Download", () =>

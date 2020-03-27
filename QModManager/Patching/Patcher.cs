@@ -36,14 +36,14 @@ namespace QModManager.Patching
                 if (Patched)
                 {
                     Logger.Warn("Patch method was called multiple times!");
-                    return; // Halt patching
+                    return;
                 }
 
                 Patched = true;
 
-                Logger.Info("Game Version: " + SNUtils.GetPlasticChangeSetOfBuild() + " Build Date: " + SNUtils.GetDateTimeOfBuild().ToLongDateString());
                 Logger.Info($"Loading QModManager v{Assembly.GetExecutingAssembly().GetName().Version.ToStringParsed()}...");
-                Logger.Info($"Today is {DateTime.Today:dd-MMMM-yyyy}");
+                Logger.Info("Game Version: " + SNUtils.GetPlasticChangeSetOfBuild() + " | Build Date: " + SNUtils.GetDateTimeOfBuild().ToLongDateString());
+                Logger.Info($"Date: {DateTime.Today.ToLongDateString()} | Time: ${DateTime.Now.ToLongTimeString()}");
 
                 if (QModBaseDir == null)
                 {
@@ -75,10 +75,7 @@ namespace QModManager.Patching
                 PirateCheck.IsPirate(Environment.CurrentDirectory);
 
                 var gameDetector = new GameDetector();
-
-                if (!gameDetector.IsValidGameRunning)
-                    return;
-
+                if (!gameDetector.IsValidGameRunning) return;
                 CurrentlyRunningGame = gameDetector.CurrentlyRunningGame;
 
                 try
@@ -121,7 +118,6 @@ namespace QModManager.Patching
                 initializer.InitializeMods(modsToLoad);
 
                 SummaryLogger.ReportIssues(modsToLoad);
-
                 SummaryLogger.LogSummaries(modsToLoad);
             }
             catch (FatalPatchingException pEx)
