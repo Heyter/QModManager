@@ -8,7 +8,7 @@ namespace QModManager.Utility
 {
     internal static class NetworkUtilities
     {
-        internal static bool CheckConnection(string hostedURL = "http://www.google.com")
+        internal static bool IsOnline(string hostedURL = "http://www.google.com")
         {
             try
             {

@@ -9,6 +9,7 @@
     using System.Diagnostics;
     using System.IO;
     using System.Linq;
+    using System.Net;
     using UnityEngine;
     using UnityEngine.UI;
 
@@ -33,6 +34,34 @@
                 else
                 {
                     Logger.Error($"Expected log file at: \"{logPath}\" but none was found.");
+                }
+            });
+            internal static readonly Button CopyLog = new Button("Copy Log", () =>
+            {
+                string logPath = Application.consoleLogPath;
+
+                Logger.Debug($"Opening log file located in: \"{logPath}\"");
+
+                if (!File.Exists(logPath))
+                    Logger.Error($"Expected log file at: \"{logPath}\" but none was found.");
+
+                try
+                {
+                    string text = File.ReadAllText(logPath);
+                    HttpStatusCode status = LogUploader.Upload(text, out string url);
+
+                    switch (status)
+                    {
+                        case HttpStatusCode.Unused:
+                            // No internet
+                            break;
+                        case HttpStatusCode.OK:
+                            // Copy URL
+                            break;
+                        default:
+                            // Error?
+                            break;
+                    }
                 }
             });
             internal static readonly Button Close = new Button("Close", () => { });

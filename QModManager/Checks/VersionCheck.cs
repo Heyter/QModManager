@@ -23,7 +23,7 @@
                 return;
             }
 
-            if (!NetworkUtilities.CheckConnection())
+            if (!NetworkUtilities.IsOnline())
             {
                 Logger.Info("Cannot check for updates, internet disabled");
                 return;
